@@ -12,6 +12,7 @@ TextView tv;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         tv=(TextView)findViewById(R.id.textView2);
+
         String str=getIntent().getExtras().getString("data");
 
         MyDataCarier mdc= (MyDataCarier)getIntent().getExtras().getSerializable("MyData");
